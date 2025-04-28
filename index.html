@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Builder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <div class="brand">
+        <img src="logo.png" alt="/">
+        <span class="name">Resume Builder</span>
+      </div>
+      <div class="button">
+        <button type="submit">Generate Resume</button>
+      </div>
+    </div>
+  </nav>
+  <form id="resumeForm">
+    <div class="page">
+
+      <div id="page1" class="form-page active">
+        <div class="page">
+
+          <h2>Personal Information</h2>
+          
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" > 
+      
+          <label for="address">Address:</label>
+          <input type="text" id="address" name="address" >
+        
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" >
+        
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" >
+        
+          <label for="linkedin">LinkedIn:</label>
+          <input type="url" id="linkedin" name="linkedin" >
+        
+          <label for="github">GitHub:</label>
+          <input type="url" id="github" name="github" >
+          
+      
+        </div>
+        <button type="button" onclick="nextPage(2)">Next</button>
+      </div>
+    
+      <!-- Education -->
+      <div id="page2" class="form-page">
+        <div class="page">
+
+          <h2>Education Details</h2>
+    
+          <label for="clg">College:</label>
+          <input type="text" id="clg" name="clg" >
+        
+          <label for="clg-educationDates">Clg-Education Dates:</label>
+          <input type="text" id="clg-educationDates" name="clg-educationDates" >
+        
+          <label for="clg-Degree">Clg-Degree:</label>
+          <input type="text" id="clg-degree" name="clg-degree" >
+    
+          <label for="clg-Stream">Clg-Stream:</label>
+          <input type="text" id="clg-Stream" name="clg-Stream" >
+        
+          <label for="clg-location">clg-Location:</label>
+          <input type="text" id="clg-location" name="clg-location" >
+    
+          <label for="school">School:</label>
+          <input type="text" id="school" name="school" >
+        
+          <label for="educationDates">Education Dates:</label>
+          <input type="text" id="educationDates" name="educationDates" >
+        
+          <label for="degree">Degree:</label>
+          <input type="text" id="degree" name="degree" >
+    
+          <label for="Stream">Stream</label>
+          <input type="text" id="Stream" name="Stream" >
+        
+          <label for="location">Location:</label>
+          <input type="text" id="location" name="location" >
+          <br>
+    
+        </div>
+        <button type="button" onclick="prevPage(1)">Previous</button>
+        <button type="button" onclick="nextPage(3)">Next</button>
+      </div>
+      
+      <!-- Relevant Coursework -->
+      <div id="page3" class="form-page">
+        <div class="page">
+
+          <h2>Relevant Coursework</h2>
+    
+          <label for="course1">Course 1:</label>
+          <input type="text" id="course1" name="course1" >
+        
+          <label for="course2">Course 2:</label>
+          <input type="text" id="course2" name="course2" >
+    
+          <label for="course3">Course 3:</label>
+          <input type="text" id="course3" name="course3" >
+          
+          <label for="course4">Course 4:</label>
+          <input type="text" id="course4" name="course4" >
+          
+          <label for="course5">Course 5:</label>
+          <input type="text" id="course5" name="course2" >
+          
+          <label for="course6">Course 6:</label>
+          <input type="text" id="course6" name="course6" ><br>
+    
+        </div>
+        <button type="button" onclick="prevPage(2)">Previous</button>
+        <button type="button" onclick="nextPage(4)">Next</button>
+      </div>
+  
+      <!-- Experience -->
+      <div id="page4" class="form-page">
+        <div class="page">
+
+          <h2>Experience</h2>
+    
+          <label for="company1">Company 1:</label>
+          <input type="text" id="company1" name="company1" >
+        
+          <label for="jobDates1">Job Dates 1:</label>
+          <input type="text" id="jobDates1" name="jobDates1" >
+        
+          <label for="jobTitle1">Job Title 1:</label>
+          <input type="text" id="jobTitle1" name="jobTitle1" >
+        
+          <label for="companyLocation1">Company Location 1:</label>
+          <input type="text" id="companyLocation1" name="companyLocation1" >
+        
+          <label for="company1des1">company1 des1:</label>
+          <input type="text" id="company1des1" name="company1des1" >
+    
+          <label for="company1des2">company1 des2</label>
+          <input type="text" id="company1des2" name="company1des2">
+    
+          <label for="company2 ">Company 2:</label>
+          <input type="text" id="company2" name="company2" >
+        
+          <label for="jobDates2">Job Dates 2:</label>
+          <input type="text" id="jobDates2" name="jobDates2" >
+        
+          <label for="jobTitle2">Job Title 2:</label>
+          <input type="text" id="jobTitle2" name="jobTitle2" >
+        
+          <label for="companyLocation2">Company Location 2:</label>
+          <input type="text" id="companyLocation2" name="companyLocation2" >
+        
+          <label for="company2des1">company2 des1:</label>
+          <input type="text" id="company2des1" name="company2des1" >
+    
+          <label for="company2des2">company2 des2</label>
+          <input type="text" id="company2des2" name="company2des2">
+          <br>
+    
+        </div>
+        <button type="button" onclick="prevPage(3)">Previous</button>
+        <button type="button" onclick="nextPage(5)">Next</button>
+      </div>
+    
+      <!-- Projects -->
+      <div id="page5" class="form-page">
+        <div class="page">
+
+          <h2>Projects</h2>
+    
+          <label for="project1">Project 1:</label>
+          <input type="text" id="project1" name="project1" >
+        
+          <label for="project1Tech">Project 1 Tech :</label>
+          <input type="text" id="project1Tech" name="project1Tech" >
+    
+          <label for="project1link">Project 1 Link :</label>
+          <input type="url" id="project1link" name="project1link" >
+    
+          <label for="project1Date">Project 1 Date:</label>
+          <input type="text" id="project1Date" name="project1Date" >
+        
+          <label for="project1Des1">Project 1 Description 1:</label>
+          <input type="text" id="project1Des1" name="project1Des1"  >
+    
+          <label for="project1Des2">Project 1 Description 2:</label>
+          <input type="text" id="project1Des2" name="project1Des2"  >
+    
+          <label for="project1Des3">Project 1 Description 3:</label>
+          <input type="text" id="project1Des3" name="project1Des3"  >
+    
+          <label for="project2">Project 2:</label>
+          <input type="text" id="project2" name="project2" >
+        
+          <label for="project2Tech">Project 2 Tech :</label>
+          <input type="text" id="project2Tech" name="project2Tech" >
+    
+          <label for="project2link">Project 2 Link :</label>
+          <input type="url" id="project2link" name="project2link" >
+    
+          <label for="project2Date">Project 2 Date:</label>
+          <input type="text" id="project2Date" name="project2Date" >
+        
+          <label for="project2Des1">Project 2 Description 1:</label>
+          <input type="text" id="project2Des1" name="project2Des1"  >
+    
+          <label for="project2Des2">Project 2 Description 2:</label>
+          <input type="text" id="project2Des2" name="project2Des2"  >
+    
+          <label for="project2Des3">Project 2 Description 3:</label>
+          <input type="text" id="project2Des3" name="project2Des3"  >
+    
+          <label for="project3">Project 3:</label>
+          <input type="text" id="project3" name="project3" >
+        
+          <label for="project3Tech">Project 3 Tech :</label>
+          <input type="text" id="project3Tech" name="project3Tech" >
+    
+          <label for="project3link">Project 3 Link :</label>
+          <input type="url" id="project3link" name="project3link" >
+    
+          <label for="project3Date">Project 3 Date:</label>
+          <input type="text" id="project3Date" name="project3Date" >
+        
+          <label for="project3Des1">Project 3 Description 1:</label>
+          <input type="text" id="project3Des1" name="project3Des1"  >
+    
+          <label for="project3Des2">Project 3 Description 2:</label>
+          <input type="text" id="project3Des2" name="project3Des2"  >
+    
+          <label for="project3Des3">Project 3 Description 3:</label>
+          <input type="text" id="project3Des3" name="project3Des3"  >
+          <br>
+    
+        </div>
+        <button type="button" onclick="prevPage(4)">Previous</button>
+        <button type="button" onclick="nextPage(6)">Next</button>
+      </div>
+    
+      <!-- Technical Skills -->
+      <div id="page6" class="form-page">
+        <div class="page">
+
+          <h2>Technical Skills</h2>
+    
+          <label for="languages">Languages:</label>
+          <input type="text" id="languages" name="languages" >
+        
+          <label for="tools">Developer Tools:</label>
+          <input type="text" id="tools" name="tools" >
+        
+          <label for="technologies">Technologies/Frameworks:</label>
+          <input type="text" id="technologies" name="technologies" >
+          <br>
+    
+        </div>
+        <button type="button" onclick="prevPage(5)">Previous</button>
+        <button type="button" onclick="nextPage(7)">Next</button>
+      </div>
+      
+      <!-- Certifications -->
+      <div id="page7" class="form-page">
+        <div class="page">
+
+          <h2>Certifications</h2>
+    
+          <label for="certification1">Certification 1:</label>
+          <input type="text" id="certification1" name="certification1" >
+        
+          <label for="certificationLink1">Certification Link 1:</label>
+          <input type="url" id="certificationLink1" name="certificationLink1" >
+    
+          <label for="certification2">Certification 2:</label>
+          <input type="text" id="certification2" name="certification2" >
+        
+          <label for="certificationLink2">Certification Link 2:</label>
+          <input type="url" id="certificationLink2" name="certificationLink2" >
+    
+          <label for="certification3">Certification 3:</label>
+          <input type="text" id="certification3" name="certification3" >
+        
+          <label for="certificationLink3">Certification Link 3:</label>
+          <input type="url" id="certificationLink3" name="certificationLink3" >
+          <br>  
+    
+        </div>
+        <button type="button" onclick="prevPage(6)">Previous</button>
+        <button type="submit">Generate Resume</button>
+      </div>
+    </div>
+    <!-- <button type="submit">Generate Resume</button> -->
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>

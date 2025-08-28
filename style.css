@@ -1,109 +1,4 @@
-<<<<<<< HEAD
-/* Improved Base Styles */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    background-color: #f4f6f8;
-    margin: 0;
-    padding: 0;
-    color: #333;
-    line-height: 1.6;
-}
 
-.form-page {
-    display: none;
-    animation: fadeIn 0.5s ease-in-out;
-}
-
-.active {
-    display: block;
-}
-
-button {
-    margin: 10px;
-    padding: 12px 20px;
-    cursor: pointer;
-    background-color: #4a90e2;
-    border: none;
-    color: #fff;
-    border-radius: 8px;
-    font-size: 1.1em;
-    transition: background-color 0.3s ease;
-    box-shadow: 0 4px 6px rgba(74, 144, 226, 0.4);
-}
-
-button:hover,
-button:focus {
-    background-color: #357ABD;
-    outline: none;
-    box-shadow: 0 6px 10px rgba(53, 122, 189, 0.6);
-}
-
-/* Navbar */
-nav {
-    background-color: #2c3e50;
-    padding: 20px 10px;
-    width: 100%;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.container {
-    max-width: 1200px;
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    margin: auto;
-}
-
-.brand {
-    color: #ecf0f1;
-    display: flex;
-    align-items: center;
-    font-weight: 700;
-    font-size: 1.8em;
-    letter-spacing: 1px;
-}
-
-img {
-    height: 50px;
-    width: 50px;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-}
-
-.name {
-    margin-left: 15px;
-}
-
-/* Form Pages */
-.page {
-    display: flex;
-    flex-direction: column;
-    max-width: 600px;
-    margin: 30px auto;
-    padding: 30px 25px;
-    background-color: #fff;
-    border-radius: 12px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-}
-
-input {
-    padding: 12px 15px;
-    margin: 12px 0;
-    border: 1.5px solid #ccc;
-    border-radius: 8px;
-    width: 100%;
-    box-sizing: border-box;
-    font-size: 1em;
-    transition: border-color 0.3s ease;
-}
-
-input:focus {
-    border-color: #4a90e2;
-    outline: none;
-    box-shadow: 0 0 8px rgba(74, 144, 226, 0.5);
-=======
 :root {
   /* Colors */
   --primary-color: #667eea;
@@ -537,48 +432,13 @@ body {
 .btn-success:hover {
   background: #059669;
   transform: translateY(-2px);
->>>>>>> ea60ef9 (ui update)
+
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-<<<<<<< HEAD
-    .container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
 
-    .name {
-        font-size: 1.5em;
-    }
 
-    .page {
-        padding: 20px 15px;
-        max-width: 90%;
-    }
-}
-
-@media (max-width: 480px) {
-    .name {
-        font-size: 1.2em;
-    }
-
-    button {
-        font-size: 1em;
-        padding: 10px 16px;
-    }
-
-    input {
-        font-size: 1em;
-    }
-}
-
-/* Animations */
-@keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
-=======
   .hero {
     padding: 6rem 1rem 4rem;
   }
@@ -782,5 +642,5 @@ body {
     align-self: flex-end;
     margin-top: 0.25rem;
   }
->>>>>>> ea60ef9 (ui update)
+
 }

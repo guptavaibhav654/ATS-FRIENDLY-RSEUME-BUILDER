@@ -707,7 +707,7 @@ document.getElementById('resumeForm').addEventListener('submit', function(e) {
     const formData = collectFormData();
     const latexContent = generateLaTeX(formData);
 
-    fetch('http://localhost:3001/generate-pdf', {
+    fetch('/generate-pdf', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ latexContent }),

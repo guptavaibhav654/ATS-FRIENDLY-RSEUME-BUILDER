@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<<<<<<< HEAD
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resume Builder</title>
@@ -300,3 +301,312 @@
   <script src="script.js"></script>
 </body>
 </html>
+=======
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder Pro - Create Professional Resumes in Minutes</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <i class="fas fa-file-alt"></i>
+                <span>ResumeBuilder Pro</span>
+            </div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#templates">Templates</a>
+                <a href="#builder" class="btn-primary">Start Building</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Create a <span class="gradient-text">Professional Resume</span> That Gets You Hired</h1>
+            <p>Join 2+ million professionals who've landed their dream jobs with our AI-powered resume builder.</p>
+            <div class="hero-cta">
+                <a href="#builder" class="btn-primary">Start Building Free</a>
+                <a href="#templates" class="btn-secondary">View Templates</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Why Choose ResumeBuilder Pro?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-magic"></i>
+                    <h3>AI-Powered</h3>
+                    <p>Smart suggestions and content optimization</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-palette"></i>
+                    <h3>Professional Templates</h3>
+                    <p>ATS-friendly designs that stand out</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Build in Minutes</h3>
+                    <p>Create your resume in under 10 minutes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Builder Section -->
+    <section id="builder" class="builder-section">
+        <div class="container">
+            <div class="builder-header">
+                <h2>Build Your Professional Resume</h2>
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <div class="progress-steps">
+                        <div class="step active" data-step="1">Personal</div>
+                        <div class="step" data-step="2">Education</div>
+                        <div class="step" data-step="3">Summary</div>
+                        <div class="step" data-step="4">Experience</div>
+                        <div class="step" data-step="5">Projects</div>
+                        <div class="step" data-step="6">Skills</div>
+                        <div class="step" data-step="7">Certifications</div>
+                    </div>
+                </div>
+            </div>
+
+            <form id="resumeForm" class="form-container">
+                <!-- Personal Information -->
+                <div class="form-page active" data-page="1">
+                    <h3>Personal Information</h3>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label>Full Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label>Email Address</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" required>
+                            <label>Phone Number</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="address" name="address">
+                            <label>Address</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="portfolio_username" name="portfolio_username" >
+                            <label>Portfolio Username</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="url" id="portfolio" name="portfolio">
+                            <label>Portfolio Website URL</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="linkedin_username" name="linkedin_username" >
+                            <label>LinkedIn Username</label>
+                        </div>
+                            <div class="form-group">
+                            <input type="url" id="linkedin" name="linkedin">
+                            <label>LinkedIn Profile URL</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="github_username" name="github_username">
+                            <label>GitHub Profile</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="url" id="github" name="github">
+                            <label>GitHub Username URL</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education -->
+                <div class="form-page" data-page="2">
+                    <h3>Education Details</h3>
+                    <div class="education-section" id="educationContainer">
+                        <div class="education-item" data-education="1">
+                            <h4>Education 1</h4>
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <input type="text" id="clg1" name="clg1" placeholder=" ">
+                                    <label>College Name</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="clg-educationDates1" name="clg-educationDates1" placeholder=" ">
+                                    <label>Duration</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="clg-degree1" name="clg-degree1" placeholder=" ">
+                                    <label>Degree</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="clg-Stream1" name="clg-Stream1" placeholder=" ">
+                                    <label>Stream</label>
+                                </div>
+                            </div>
+                            <button type="button" class="btn-remove" onclick="removeEducation(1)">
+                                <i class="fas fa-trash"></i> Remove
+                            </button>
+                        </div>
+                    </div>
+                    <button type="button" class="btn-add" onclick="addEducation()">
+                        <i class="fas fa-plus"></i> Add Another Education
+                    </button>
+                </div>
+
+                <!-- Professional Summary -->
+                <div class="form-page" data-page="3">
+                    <h3>Professional Summary</h3>
+                    <div class="form-group full-width">
+                        <input id="professionalSummary" name="professionalSummary" placeholder="Write a compelling summary of your professional experience..."></input>
+                        <label>Professional Summary</label>
+                    </div>
+                </div>
+
+                <!-- Experience -->
+                <div class="form-page" data-page="4">
+                    <h3>Work Experience</h3>
+                    <div class="experience-section" id="experienceContainer">
+                        <div class="experience-item" data-experience="1">
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <input type="text" id="company1" name="company1">
+                                    <label>Company Name</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="jobTitle1" name="jobTitle1">
+                                    <label>Job Title</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="jobDates1" name="jobDates1">
+                                    <label>Duration</label>
+                                </div>
+                            </div>
+                            <div class="points-container" id="experiencePoints1">
+                                <div class="point-item">
+                                    <input type="text" name="expPoint1_1" placeholder="Key responsibility or achievement...">
+                                    <button type="button" class="btn-point-remove" onclick="removePoint(this)">&times;</button>
+                                </div>
+                            </div>
+                            <div class="point-actions">
+                                <button type="button" class="btn-point-add" onclick="addExperiencePoint(1)">
+                                    <i class="fas fa-plus"></i> Add Point
+                                </button>
+                            </div>
+                            <button type="button" class="btn-remove" onclick="removeExperience(1)">
+                                <i class="fas fa-trash"></i> Remove
+                            </button>
+                        </div>
+                    </div>
+                    <button type="button" class="btn-add" onclick="addExperience()">
+                        <i class="fas fa-plus"></i> Add Another Experience
+                    </button>
+                </div>
+
+                <!-- Projects -->
+                <div class="form-page" data-page="5">
+                    <h3>Projects</h3>
+                    <div class="project-section" id="projectsContainer">
+                        <div class="project-item" data-project="1">
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <input type="text" id="project1" name="project1">
+                                    <label>Project Name</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="project1Tech" name="project1Tech">
+                                    <label>Technologies Used</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="url" id="project1link" name="project1link">
+                                    <label>Project Link</label>
+                                </div>
+                            </div>
+                            <div class="points-container" id="projectPoints1">
+                                <div class="point-item">
+                                    <input type="text" name="projPoint1_1" placeholder="Project feature or accomplishment...">
+                                    <button type="button" class="btn-point-remove" onclick="removePoint(this)">&times;</button>
+                                </div>
+                            </div>
+                            <div class="point-actions">
+                                <button type="button" class="btn-point-add" onclick="addProjectPoint(1)">
+                                    <i class="fas fa-plus"></i> Add Point
+                                </button>
+                            </div>
+                            <button type="button" class="btn-remove" onclick="removeProject(1)">
+                                <i class="fas fa-trash"></i> Remove
+                            </button>
+                        </div>
+                    </div>
+                    <button type="button" class="btn-add" onclick="addProject()">
+                        <i class="fas fa-plus"></i> Add Another Project
+                    </button>
+                </div>
+
+                <!-- Skills -->
+                <div class="form-page" data-page="6">
+                    <h3>Technical Skills</h3>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <input type="text" id="languages" name="languages">
+                            <label>Programming Languages</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="tools" name="tools">
+                            <label>Developer Tools</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="technologies" name="technologies">
+                            <label>Technologies/Frameworks</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certifications -->
+                <div class="form-page" data-page="7">
+                    <h3>Certifications</h3>
+                    <div class="certifications-section" id="certificationsContainer">
+                        <div class="certification-item" data-certification="1">
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <input type="text" id="certification1" name="certification1">
+                                    <label>Certification Name</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="url" id="certificationLink1" name="certificationLink1">
+                                    <label>Certification Link</label>
+                                </div>
+                            </div>
+                            <button type="button" class="btn-remove" onclick="removeCertification(1)">
+                                <i class="fas fa-trash"></i> Remove
+                            </button>
+                        </div>
+                    </div>
+                    <button type="button" class="btn-add" onclick="addCertification()">
+                        <i class="fas fa-plus"></i> Add Another Certification
+                    </button>
+                </div>
+
+                <div class="navigation-buttons">
+                    <button type="button" class="btn-secondary" onclick="prevPage()">Previous</button>
+                    <button type="button" class="btn-primary" onclick="nextPage()">Next</button>
+                    <button type="submit" class="btn-success" style="display: none;">Generate Resume</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+>>>>>>> ea60ef9 (ui update)

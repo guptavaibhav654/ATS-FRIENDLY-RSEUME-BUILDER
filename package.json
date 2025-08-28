@@ -1,7 +1,22 @@
 {
+<<<<<<< HEAD
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.21.2",
     "node-latex": "^3.1.0"
+=======
+  "name": "resume-server",
+  "version": "1.0.0",
+  "description": "Node.js server to generate PDF from LaTeX content",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "node-latex": "^2.6.4"
+>>>>>>> ea60ef9 (ui update)
   }
 }

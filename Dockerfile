@@ -1,10 +1,9 @@
 # Use official Node.js base image
 FROM node:18
 
-# Install TeX Live (minimal plus extra fonts and xetex)
+# Install TeX Live (full installation for comprehensive support)
 RUN apt-get update && \
-    apt-get install -y texlive-latex-base texlive-fonts-recommended texlive-latex-extra \
-                       texlive-fonts-extra texlive-xetex && \
+    apt-get install -y texlive-full && \
     apt-get clean
 
 # Set working directory

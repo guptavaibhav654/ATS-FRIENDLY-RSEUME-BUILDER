@@ -712,9 +712,15 @@ document.getElementById('resumeForm').addEventListener('submit', function(e) {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ latexContent }),
     })
-    .then(response => response.blob())
+    .then(response => {
+        if (!response.ok) {
+            return response.json().then(errorData => {
+                throw new Error(errorData.error || `Server error: ${response.status}`);
+            });
+        }
+        return response.blob();
+    })
     .then(blob => {
-
         const url = window.URL.createObjectURL(blob);
         const a = document.createElement('a');
         a.href = url;
@@ -723,10 +729,9 @@ document.getElementById('resumeForm').addEventListener('submit', function(e) {
         a.click();
         document.body.removeChild(a);
         window.URL.revokeObjectURL(url);
-
     })
     .catch(error => {
         console.error('Error:', error);
-        alert('Error generating resume. Please try again.');
+        alert(`Error generating resume: ${error.message}. Please check the console for details.`);
     });
 });
